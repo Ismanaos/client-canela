@@ -1,0 +1,39 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: #f0f0f0;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar-toggle {
+    display: block;
+    margin: 10px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .sidebar-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  
+  
+  
+  
+  

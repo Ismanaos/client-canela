@@ -1,4 +1,4 @@
-import Talleres from "../Talleres/Talleres";
+import Talleres from "../Talleres/Modelos";
 
 export default function Home(){
     
