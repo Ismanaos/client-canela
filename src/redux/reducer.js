@@ -4,7 +4,9 @@ const initialState = {
     taller: {},
     historial: [],
     allTalleres: [],
-    talleresNombre: []
+    talleresNombre: [],
+    contabilidad: [],
+    contabilidadHistorial: []
 };
 
 export const reducer = (state = initialState, action) => {
@@ -48,6 +50,16 @@ export const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 talleres: action.payload
+            }
+        case 'GET_HISTORIAL_CONTABILIDAD':
+            return {
+                ...state,
+                contabilidadHistorial: action.payload
+            }
+        case 'GET_CONTABILIDAD':
+            return {
+                ...state,
+                contabilidad: action.payload
             }
         default:
             return state;

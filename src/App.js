@@ -8,6 +8,7 @@ import Detalle from './components/Detalle/Detalle';
 import Agregado from './components/Agregados/Agregados';
 import Dashboard from './components/Dashboard/Dashboard';
 import Buscador from './components/Buscador/Buscador';
+import Contabilidad from './components/Contabilidad/Contabilidad';
 
 function App() {
   return (
@@ -45,6 +46,12 @@ function App() {
           <Route exact path='/buscador'>
             <NavSearch />
             <Buscador />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route exact path='/contabilidad'>
+            <NavSearch />
+            <Contabilidad />
           </Route>
         </Switch>
       </Router>

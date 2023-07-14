@@ -10,6 +10,7 @@ import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux";
 import { getTaller, getHistorials } from '../../redux/actions';
 import './Modelos.css';
+import logo from '../../assets/images/logo.png'
 import axios from 'axios';
 // const {
 //     URL
@@ -70,7 +71,7 @@ export default function Talleres() {
         <div className="card-container">
           {stateTalleres.reverse().map((item) => (
               <div className="card-item" key={item.id}>
-              <Card style={{ width: '21rem', backgroundColor: '#d0aa96' }}>
+              <Card style={{ width: '21rem', backgroundColor: '#f9f9f9' }}>
               <Button variant="danger" className="delete-button" onClick={handleShow}>X</Button>
                 <Card.Body>
                   <Card.Title>{item.ropa}</Card.Title>
@@ -183,7 +184,7 @@ export default function Talleres() {
               </ToastContainer>
         </div>
       ) : (
-        <img style={{ margin: '5%' }} alt='No hay nada' src='https://media.istockphoto.com/id/1330868056/es/vector/persona-que-tiene-una-pregunta-un-personaje-femenino-de-pie-en-una-pose-pensativa-sostiene.jpg?s=170667a&w=0&k=20&c=IcpcCmT8SkByi0Qre4CvjGJrkzqOiteXbLezK3ko88E=' />
+        <img style={{ margin: '7%' }} alt='No hay nada' src={logo} />
       )}
     </div>
   );

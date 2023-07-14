@@ -86,3 +86,23 @@ export const getHistorials = (id) => {
         });
     }
 }
+
+export const getContabilidad = () => {
+    return async dispatch => {
+        const response = await axios.get(`http://localhost:3001/contabilidad/`);
+        dispatch({
+            type: 'GET_CONTABILIDAD',
+            payload: response.data
+        });
+    }
+}
+
+export const getHistorialContabilidad = (id) => {
+    return async dispatch => {
+        const response = await axios.get(`http://localhost:3001/contabilidad/historial?id=${id}`);
+        dispatch({
+            type: 'GET_HISTORIAL_CONTABILIDAD',
+            payload: response.data
+        });
+    }
+}

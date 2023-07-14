@@ -46,6 +46,7 @@ export default function NavSearch(){
               <Nav.Link href="/modelos">Modelos</Nav.Link>
               <Nav.Link href="/talleres">Talleres</Nav.Link>
               <Nav.Link href="/buscador">Buscador</Nav.Link>
+              <Nav.Link href="/contabilidad">Contabilidad</Nav.Link>
               <Nav.Link href="/crear">Crear</Nav.Link>
             </Nav>
             <Form className="d-flex">
